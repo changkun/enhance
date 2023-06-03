@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT license that
 // can be found in the LICENSE file.
 
+// Package enhance provides image enhancement algorithms for adjusting brightness, contrast, saturation, temperature, and tint.
 package enhance
 
 import (
@@ -16,7 +17,6 @@ type Params struct {
 	Saturation  float64 `json:"saturation"`
 	Temperature float64 `json:"temperature"`
 	Tint        float64 `json:"tint"`
-	Quality     float64 `json:"quality"`
 }
 
 // Image enhances a given image.Image and returns a new image.RGBA.
